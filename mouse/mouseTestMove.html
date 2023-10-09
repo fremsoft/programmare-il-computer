@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coordinate del Mouse con jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Coordinate del Mouse con jQuery</h1>
+    <p>Sposta il cursore sulla pagina per visualizzare le coordinate del mouse:</p>
+    <p id="coordinate"></p>
+
+    <script>
+        function mostraCoordinate(event) {
+            var x = event.clientX;
+            var y = event.clientY;
+            $("#coordinate").text("Coordinate X: " + x + ", Y: " + y);
+        }
+
+        $(document).mousemove(mostraCoordinate);
+    </script>
+</body>
+</html>
