@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Utilizzo del Mouse con jQuery</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1>Utilizzo del Mouse con jQuery</h1>
+    <p>Fai clic sul paragrafo qui sotto per vedere l'effetto.</p>
+    <p id="mouse-example">Nessun clic effettuato.</p>
+
+    <script>
+        $(document).ready(function() {
+            $("#mouse-example").click(function() {
+                $(this).text("Hai fatto clic!");
+            });
+        });
+    </script>
+</body>
+</html>
